@@ -1,1 +1,299 @@
+/* styles.css */
 
+/* Reset some basic elements */
+body, h1, h2, p, ul, li, a, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.navbar .brand-title {
+    padding: 1rem;
+}
+
+.navbar-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    padding: 1rem;
+}
+
+.navbar-links li a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    color: coral;
+}
+
+/* Toggle button for small screens */
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 1rem;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: coral;
+}
+
+.hero h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+}
+
+/* Work Items */
+.work-item {
+    margin-bottom: 1rem;
+}
+
+.work-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Contact Form */
+footer {
+   
+
+/* styles.css */
+
+/* Reset some basic elements */
+body, h1, h2, p, ul, li, a, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.navbar .brand-title {
+    padding: 1rem;
+}
+
+.navbar-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    padding: 1rem;
+}
+
+.navbar-links li a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    color: coral;
+}
+
+/* Toggle button for small screens */
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 1rem;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: coral;
+}
+
+.hero h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+}
+
+/* Work Items */
+.work-item {
+    margin-bottom: 1rem;
+}
+
+.work-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Contact Form */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+#contact-form {
+    margin: 2rem auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 90%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: coral;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: darkcoral;
+}
+
+/* Social Links */
+.social-links a {
+    padding: 0.5rem;
+    color: white;
+    margin: 0 0.5rem;
+}
+
+.social-links a:hover {
+    color: coral;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+}
+
+/* Add more responsive styles as necessary */

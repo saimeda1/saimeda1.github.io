@@ -3,39 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Meda - Developer and Student</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Your Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Résumé</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="brand-title">Your Name</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
-        <section id="hello">
-            <h1>Hello World! I'm a Student @Purdue Univeristy</h1>
-        </section>
-        <section id="work">
-            <h2>Work Experience</h2>
-            <!-- Work Experience Items Here -->
-        </section>
-        <section id="resume">
-            <h2>Résumé</h2>
-            <!-- Résumé Details Here -->
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: meda@purdue.edu </p>
-            <!-- Additional Contact Methods Here -->
-        </section>
-    </main>
+
+    <section id="home" class="hero">
+        <h1>Hello, I'm [Your Name], a Developer and Designer.</h1>
+        <p>Welcome to my personal space on the web where I share my work and ideas.</p>
+        <!-- Your headshot image goes here -->
+        <img src="headshot.jpg" alt="Your Headshot">
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>A brief introduction about yourself.</p>
+        <!-- More content about you goes here -->
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <!-- Content for your resume goes here -->
+        <a href="resume.pdf" download>Download My Resume</a>
+    </section>
+
+    <section id="work">
+        <h2>My Work</h2>
+        <!-- Thumbnails for your work go here -->
+        <div class="work-item">
+            <img src="project-thumbnail.jpg" alt="Project Thumbnail">
+            <p>Project Description</p>
+        </div>
+        <!-- Repeat for more work items -->
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <!-- Blog post entries go here -->
+    </section>
+
     <footer>
-        © 2024 Sai Meda
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-links">
+            <!-- Social media links go here -->
+            <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+            <a href="https://github.com/yourusername">GitHub</a>
+            <!-- Add other social links as needed -->
+        </div>
     </footer>
 </body>
 </html>
