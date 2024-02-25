@@ -18,8 +18,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
     line-height: 1;
     font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #123740;
+    background-color: #f6f6f6;
 }
 
 a {
@@ -32,8 +32,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: white;
+    background-color: #123740;
+    color: #f6f6f6;
 }
 
 .navbar .brand-title {
@@ -50,12 +50,12 @@ a {
 }
 
 .navbar-links li a {
-    color: white;
+    color: #f6f6f6;
     transition: color 0.3s ease;
 }
 
 .navbar-links li a:hover {
-    color: coral;
+    color: #549aab;
 }
 
 /* Toggle button for small screens */
@@ -75,7 +75,7 @@ a {
 .toggle-button .bar {
     height: 3px;
     width: 25px;
-    background-color: white;
+    background-color: #f6f6f6;
     border-radius: 10px;
 }
 
@@ -83,18 +83,18 @@ a {
 .hero {
     text-align: center;
     padding: 2rem;
-    background: coral;
+    background: #549aab;
 }
 
 .hero h1 {
     margin-bottom: 0.5rem;
     font-size: 2.5rem;
-    color: white;
+    color: #f6f6f6;
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: white;
+    color: #f6f6f6;
     margin-bottom: 2rem;
 }
 
@@ -138,7 +138,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
     line-height: 1;
     font-family: 'Arial', sans-serif;
-    color: #333;
+    color: #123740;
     background-color: #f4f4f4;
 }
 
@@ -152,8 +152,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: white;
+    background-color: #123740;
+    color: #f6f6f6;
 }
 
 .navbar .brand-title {
@@ -170,12 +170,12 @@ a {
 }
 
 .navbar-links li a {
-    color: white;
+    color: #f6f6f6;
     transition: color 0.3s ease;
 }
 
 .navbar-links li a:hover {
-    color: coral;
+    color: #549aab;
 }
 
 /* Toggle button for small screens */
@@ -195,7 +195,7 @@ a {
 .toggle-button .bar {
     height: 3px;
     width: 25px;
-    background-color: white;
+    background-color: #f6f6f6;
     border-radius: 10px;
 }
 
@@ -203,18 +203,18 @@ a {
 .hero {
     text-align: center;
     padding: 2rem;
-    background: coral;
+    background: #549aab;
 }
 
 .hero h1 {
     margin-bottom: 0.5rem;
     font-size: 2.5rem;
-    color: white;
+    color: #f6f6f6;
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: white;
+    color: #f6f6f6;
     margin-bottom: 2rem;
 }
 
@@ -236,8 +236,8 @@ section {
 
 /* Contact Form */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #123740;
+    color: #f6f6f6;
     text-align: center;
     padding: 2rem;
 }
@@ -259,25 +259,25 @@ footer {
     padding: 0.5rem 2rem;
     border: none;
     border-radius: 5px;
-    background-color: coral;
-    color: white;
+    background-color: #549aab;
+    color: #f6f6f6;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 #contact-form button:hover {
-    background-color: darkcoral;
+    background-color: dark#549aab;
 }
 
 /* Social Links */
 .social-links a {
     padding: 0.5rem;
-    color: white;
+    color: #f6f6f6;
     margin: 0 0.5rem;
 }
 
 .social-links a:hover {
-    color: coral;
+    color: #549aab;
 }
 
 /* Responsive Design */
