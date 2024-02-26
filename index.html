@@ -16,13 +16,16 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </a>
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#blog">Blog</a></li>
+              <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#resume">Resume</a>
+                    <a href="#work">Work</a>
+                    <a href="#blog">Blog</a>
+                </div>
+            </div>
                 </ul>
             </div>
             
@@ -41,9 +44,6 @@
 		</div>
 	</section>
     <body>
-      <section id="name">
-        <h1>Sai Meda</h1>
-      </section>
     <section id="about">
         <h2>About Me</h2> 
         <ul>Welcome to my personal space on the web where I share my work and ideas. <br>
@@ -200,15 +200,19 @@
         <form id="contact-form">
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+            <textarea id="message" placeholder="Your Message" required maxlength="250" rows="4" cols="50"></textarea>
+<div id="message-warning" style="color: red; display: none;">
+    Message limit exceeded.
+</div>
             <button type="submit">Send Message</button>
         </form>
         <div class="social-links">
             <!-- Social media links go here -->
-            <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
-            <a href="https://github.com/yourusername">GitHub</a>
+            <a href="https://www.linkedin.com/in/saivmeda/">LinkedIn</a>
+            <a href="https://github.com/saimeda1">GitHub</a>
             <!-- Add other social links as needed -->
         </div>
     </footer>
+
 </body>
 </html>
