@@ -11,6 +11,10 @@
 		<link href='http://fonts.googleapis.com/css?family=Rokkitt|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'> 
 		<link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>   
 		<link href="dist/magnific-popup.css?v=0.9.8" rel="stylesheet" />
+		
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 	    <script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -157,48 +161,15 @@
             
 			<!-- Portfolio -->
 			<div id="work"><div class="inner">
-				<p class="tagline">Work + Fun</p>
-		
-				<div class="portfolio-thumb portfolio-big">
-					<a class="image-popup-no-margins" href="img/portfolio/happen.png"><img src="img/portfolio/happen.png"></a>
-					<p class="description"><b>Happen</b>&nbsp;&nbsp; A group project for our senior software design capstone class inspired by our collective frustration with current social media’s focus on making our backlogs public. We want to create a tool for people to make plans for the future with all interactions between users kept private. This will be a simple planning platform where users can keep a list of things they want to do and friends can ambiently express their interest by swiping “me too.” We expect further communication to take place outside the app and are interested in the simplicity of its humble feature set, and its potential to encourage offline communication and activity. Working as a designer and developer. Currently in development. 
-
-</p>
+				<p class="tagline">Projects</p>
+				<div id="portfolio-slider" class="row">
+					<div class="portfolio-thumb">
+						<a class="image-popup-no-margins"  ><img src="cat.png"></a>
+						<p class="description"><b>Illustrations</b> kitty
+					<!-- Repeat .portfolio-thumb block for additional slides -->
 				</div>
-				<div class="row">
-					<div class="portfolio-thumb">
-						<a class="image-popup-no-margins" href="img/portfolio/bike2.png"><img src="img/portfolio/bike2.png"></a>
-						<p class="description"><b>Illustrations</b>&nbsp;&nbsp; I like to draw things I like. My Schwinn ride pictured above.</p>
-					</div>
-					<div class="portfolio-thumb">
-						<a class="image-popup-no-margins" href="img/portfolio/labs2.png"><img src="img/portfolio/labs2.png"></a>
-						<p class="description"><b>IDEO Labs</b>&nbsp;&nbsp; Worked on front-end development of a wordpress theme designed for the new <a target="_blank" href="http://labs.ideo.com">IDEO Labs site</a>.</p>
-					</div>
-				</div>						
-				<div class="row">
-					<div class="portfolio-thumb">
-						<a class="image-popup-no-margins" href="img/portfolio/apollo2.png"><img src="img/portfolio/apollo2.png"></a>
-						<p class="description"><b>Apollo</b>&nbsp;&nbsp; An internal summer intern project at IDEO. Apollo is
-						 a searchable community of people tagged with rich psychographic data, curated to provide resolution and reach to companies looking
-						 for research candidates.
-						</p>
-					</div>
-					<div class="portfolio-thumb">
-						<a class="image-popup-no-margins" href="img/portfolio/xx_03.png"><img src="img/portfolio/xx_03.png"></a>
-						<p class="description"><b>Music Visualizer</b>&nbsp;&nbsp; Experimental summer
-						project using WebGL and Three.js with a beat detection algorithm to make an interactive 3D music visualization of album artwork using orbit controls. Play <a target="_blank" href="visualizer/xx.html">here</a>.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="portfolio-thumb">
-						<a class="popup-vimeo" href="http://vimeo.com/41632558"><img src="img/portfolio/cube2.png"></a>
-						<p class="description"><b>LED Cube</b>&nbsp;&nbsp; Built with a friend as a final project for USC EE 201: Introduction to Digital Circuits. Constructed an 8x8x8 LED Cube three-dimensional display. Designed and wired the driver circuit board. Wrote application modules in Verilog to navigate the cube. </p>
-					</div>
-					<div class="portfolio-thumb">
-						<a class="image-popup-no-margins" href="img/portfolio/homefit.png"><img src="img/portfolio/homefit.png"></a>
-						<p class="description"><b>Homefit</b>&nbsp;&nbsp; Working with Executive Director of Digital Innovation at USC Viterbi School of Engineering, Ashish Soni, to research, conceptualize, wireframe, and design a new online tool for people looking to buy a home. </p></div>
-					</div>
-				</div>
+				
+			
 			</div></div>
 			<div  id ="footer"><div class="inner">
 				© 2024 Sai Meda. 
@@ -248,8 +219,6 @@
 		          type: 'ajax'
 		        });
 		      });
-		</script>
-		<script>
 		// call the plugin on the "#toc" element
 		$('#toc').fixedTOC({
 			menuOpens: 'click', // or 'mouseenter'
@@ -271,4 +240,14 @@
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
 		</script>
+		<script>
+			$(document).ready(function(){
+				$('#portfolio-slider').slick({
+					// Your settings (e.g., slides to show, autoplay, etc.)
+					infinite: true,
+					slidesToShow: 3,
+					slidesToScroll: 1
+				});
+			});
+			</script>
 	</body>

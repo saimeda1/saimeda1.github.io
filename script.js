@@ -1,5 +1,7 @@
 // script.js
+import slick from 'slick-carousel';
 
+//
 document.addEventListener('DOMContentLoaded', function() {
   
     const toggleButton = document.querySelector('.toggle-button');
