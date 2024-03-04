@@ -246,6 +246,8 @@ html {
     height: auto;
     margin-top: -30px;
     padding-top: 60px;
+    margin-bottom: -30px;
+    padding-bottom: 60px;
   /*  //font-family: 'Karla';*/
     font-size: 19px;
     line-height: 34px;
@@ -284,7 +286,7 @@ html {
   }
   
   #work{
-    background: ##eee;
+    background: #e7e7e7;
     height: auto;
     margin-top: -30px;
     text-align: center;
@@ -294,7 +296,7 @@ html {
   }
 
   #projects{
-    background: #eee;
+    background-color: #ffffff;
     height: auto;
     margin-top: -30px;
     text-align: center;
@@ -376,7 +378,8 @@ html {
   } 
   
   #footer{
-    background: #fafafa;
+    background-color: #e7e7e7;
+    background: #big;
     min-height: 50px;
     text-align: left;
     color: #b1b1b1;
