@@ -284,7 +284,7 @@ html {
   }
   
   #work{
-    background: #eee;
+    background: ##eee;
     height: auto;
     margin-top: -30px;
     text-align: center;
@@ -292,21 +292,38 @@ html {
     font-size: 26px;
     line-height: 40px;
   }
-  
+
+  #projects{
+    background: #eee;
+    height: auto;
+    margin-top: -30px;
+    text-align: center;
+    padding: 60px 0 60px 0;
+    font-size: 26px;
+    line-height: 40px;
+  } 
   .row {
     clear: both;
   }
   
   .portfolio-thumb {
-    width: 45%;
+    width: 30%; /* Adjust width as needed */
     margin: 20px;
     background-color: white;
     display: inline-block;
-    /*//height: 500px;*/
+    height: auto; /* Or set a specific height if you prefer */
+    box-shadow: 0 2px 4px #e7e7e7; /* Optional shadow for depth */
   }
   
   .portfolio-thumb img {
-    width: 100%;
+    max-width: 100%; /* Ensures the image is responsive and fits the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .portfolio-thumb .description {
+    font-size: 14px; /* Adjust the font size if needed */
+    padding: 15px; /* Adjust padding to control the space around the text */
+    text-align: left;
   }
   
   .portfolio-thumb p {
@@ -320,11 +337,43 @@ html {
   .portfolio-thumb a {
     text-decoration: underline;
   }
-  
+
   .portfolio-big {
     width: 95%;
    /* height: 680px;*/
   }
+
+  /* General styles for the blog post container */
+  .blog.post {
+  max-width: 800px; /* Limiting the width for readability */
+  margin: 20px auto; /* Centering the blog post */
+  padding: 20px; /* Adding some padding for spacing */
+  background-color: #f8f8f8; /* A light background color */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+
+  /* Style for the image to ensure it is not overly large */
+  .image-popup-no-margins img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Optional: rounded corners for the image */
+  }
+
+  /* Styling the description paragraph for better readability */
+  .description {
+  color: #333; /* Darker text color for better readability */
+  font-size: 16px; /* Suitable font size for reading */
+  line-height: 1.6; /* Increased line height for readability */
+  margin-top: 15px; /* Space above the paragraph */
+  }
+
+  /* Bold text style adjustment to make it stand out */
+  .description b {
+  color: #000; /* Making bold text darker */
+  font-weight: bold; /* Ensuring it is bold */
+  } 
   
   #footer{
     background: #fafafa;
@@ -481,7 +530,13 @@ html {
   
   @media screen and (max-width:860px) {
     .portfolio-thumb {
-      width: 90%;
+      width: 45%; /* Adjust for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width:700px) {
+    .portfolio-thumb {
+      width: 90%; /* Adjust for very small screens */
     }
   }
   
@@ -687,5 +742,65 @@ html {
     
   #footer {
     flex-shrink: 0;
-    }
+  }
+  
+
+button:hover {
+  background-color: #ddd; /* button hover effect */
+}
+
+#previous {
+  left: 10px; /* position from left */
+}
+
+#next {
+  right: 10px; /* position from right */
+}
+#carousel {
+  position: relative;
+  width: 80%; /* Adjust as necessary for your layout */
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 50%; /* Adjust the width of the slide */
+  max-width: 50%; /* This will control the size of the slide */
+  box-sizing: border-box;
+  margin: auto; /* This centers the slide */
+  display: none; /* Hide slides by default */
+}
+
+.slide.active {
+  display: block; /* Only the active slide is shown */
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slide-caption {
+  text-align: center; /* Aligns the caption to the center */
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#previous { left: 10px; }
+#next { right: 10px; }
+
+
   }

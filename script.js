@@ -42,3 +42,19 @@ window.onclick = function(event) {
         warning.style.display = 'none';
     }
 });
+let index = 0;
+
+function moveSlide(step) {
+  let slides = document.getElementsByClassName('slide');
+  if (slides.length === 0) return;
+  
+  slides[index].classList.remove('active');
+  index = (index + step + slides.length) % slides.length; // Loop around
+  slides[index].classList.add('active');
+}
+
+// Initialize first slide as active
+document.addEventListener('DOMContentLoaded', function() {
+  let slides = document.getElementsByClassName('slide');
+  if (slides.length > 0) slides[0].classList.add('active');
+});
