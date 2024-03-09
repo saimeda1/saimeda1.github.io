@@ -13,10 +13,9 @@
 		<link href="dist/magnific-popup.css?v=0.9.8" rel="stylesheet" />
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="script.js"></script>
 
 		
-		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 	    <script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -192,20 +191,74 @@
 
 		<div id="projects">
 			<p class="tagline">Projects</p>
-			<div class="inner">
+			<div class="portfolio-slider">
 				<div class="portfolio-thumb portfolio-big">
-					<a class="image-popup-no-margins" href="https://github.com/saimeda1/Sai-Ventures"target="_blank">
-						<img src="dubloon.jpg">
+					<a class="image-popup-no-margins" href="https://github.com/saimeda1/Sai-Ventures" target="_blank">
+						<img src="dubloon.jpg" alt="Project Image">
 					</a>
 					<p class="description">
 						<b>Sai Ventures</b>
-						An application that gathers stock market data and calculate valuations on stocks using multiples such as Price to 
-						Earnings. It allows a user to select a stock then proceeds to gather historical data on that stock with python web scraping.
-						Then visualizes current trading multiples to historical multiples and also evaluate historical trading evaluations to current. 
-						Essentially creating a mini Bloomberg terminal for multiples.
+						An application that gathers stock market data and calculates valuations on stocks using multiples such as Price to Earnings. 
+						Document current trading multiples to historical multiples and also evaluate historical trading evaluations to current. Essentially creating mini Bloomberg terminal.
 					</p>
 				</div>
-		</div>
+				<div class="portfolio-thumb portfolio-big">
+					<a class="image-popup-no-margins" href="https://github.com/saimeda1/Sai-Ventures" target="_blank">
+						<img src="robo_brain.gif" alt="Project Image">
+					</a>
+					<p class="description">
+						<b>AI Poker Bot</b>
+						 Created an AI bot that can play poker (Texas Hold'em) against human players or other AI bots and consistently win or make 
+						 profitable decisions. Developed a strategy for my bot: calculating hand odds, modeling other's behavior, and utilizing reinforcement learning 
+				</div>	
+				<div></div>
+				<div class="portfolio-thumb portfolio-big">
+					<a class="image-popup-no-margins" href="https://github.com/saimeda1/Sai-Ventures" target="_blank">
+						<img src="new_book.png" alt="Project Image">
+					</a>
+					<p class="description">
+						<b>Lock Free Order Book</b>
+						An order book is a list of buy and sell orders for a security or instrument organized by price level. 
+						A lock-free order book does not use traditional locking mechanisms to manage concurrent access, which can be a 
+						source of latency. Instead, it relies on atomic operations to ensure consistency without significant delays.
+					</p>
+				</div>
+				<div class="portfolio-thumb portfolio-big">
+					<a class="image-popup-no-margins" href="https://github.com/saimeda1/Gazebo-Simulation" target="_blank">
+						<img src="new_brain.png" alt="Project Image">
+					</a>
+					<p class="description">
+						<b>"Doodle Classifier" - Neural Network</b>
+						A "Doodle Classifier" using a neural network. This fun projects involves a model that can recognize and classify simple doodle drawings 
+						into predefined categories. It's a fun way to dive into image recognition with neural networks.
+					</p>
+				</div>	
+				<div></div>
+				<div class="portfolio-thumb portfolio-big">
+					<a class="image-popup-no-margins" href="https://github.com/saimeda1/Sai-Ventures" target="_blank">
+						<img src="new_chat.png" alt="Project Image">
+					</a>
+					<p class="description">
+						<b>Tweet Sentiment Analysis System - DS/ML(pytorch)</b>
+						This project involved several stages, 
+						created a real-time recommendation system for e-commerce using PyTorch. Implemented an end-to-end pipeline that processes user interaction data, 
+						trains a product recommendation model.
+						
+					</p>
+				</div>
+				<div class="portfolio-thumb portfolio-big">
+					<a class="image-popup-no-margins" href="https://github.com/saimeda1/Gazebo-Simulation" target="_blank">
+						<img src="new_arm.png" alt="Project Image">
+					</a>
+					<p class="description">
+						<b>Gazebo Simulations</b>
+						 Framework for simulating a 6DOF robot arm in Gazebo using ROS2, aimed particularly at demonstrating the arm playing the cello.
+						 By leveraging ROS2 integration, the simulation offers a realistic and dynamic environment for robotics research and development.
+					</p>
+				</div>		
+				<!-- You can duplicate or add other portfolio-thumb divs for additional slides -->
+			</div>
+			
 		</div>
 		<!-- Footer -->
 		<div  id ="footer"><div class="inner">
@@ -216,17 +269,7 @@
 					<a target="_blank" href="https://github.com/saimeda1">Github</a>
 				</span>
 			</div></div>
-			<script type="text/javascript">
-				$(document).ready(function(){
-				  $('#portfolio-slider').slick({
-					slidesToShow: 3,
-					slidesToScroll: 1,
-					autoplay: true,
-					autoplaySpeed: 2000,
-					// Add other options as needed
-				  });
-				});
-			  </script>
+	
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script src="js/jquery.fixedTOC.js?v=3.0"></script>
 		<script src="dist/jquery.magnific-popup.js?v=0.9.8"></script>

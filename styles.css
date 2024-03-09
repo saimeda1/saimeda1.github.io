@@ -342,8 +342,25 @@ html {
 
   .portfolio-big {
     width: 95%;
-   /* height: 680px;*/
+    max-width: 600px;
+    background-color: #f8f8f8; /* A light background color */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    background-image: url('path_to_image.jpg');
+    background-size: cover; /* or contain depending on what you need */
+    background-position: center;
+    background-repeat: no-repeat;
+
   }
+
+  .portfolio-big img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover; /* This will cover the entire area without stretching the image */
+    display: block;
+    margin: 0;
+    padding: 0;
+}
 
   /* General styles for the blog post container */
   .blog.post {
@@ -752,58 +769,53 @@ button:hover {
   background-color: #ddd; /* button hover effect */
 }
 
-#previous {
-  left: 10px; /* position from left */
+
+.slide-left, .slide-right {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Align the middle of the button with the middle of the container */
+  background-color: #333; /* Make the buttons visible */
+  color: #fff; /* Text color */
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px; /* Add some padding */
+  z-index: 10; /* Ensure they are above other content */
 }
 
-#next {
-  right: 10px; /* position from right */
+.slide-left {
+  left: 10px;
 }
-#carousel {
+
+.slide-right {
+  right: 10px;
+}
+
+.portfolio-thumb {
+  min-width: 100%; /* Full width of each slide */
+  transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.slider {
   position: relative;
-  width: 80%; /* Adjust as necessary for your layout */
-  margin: auto;
   overflow: hidden;
-}
-
-.slides {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.slide {
-  flex: 0 0 50%; /* Adjust the width of the slide */
-  max-width: 50%; /* This will control the size of the slide */
-  box-sizing: border-box;
-  margin: auto; /* This centers the slide */
-  display: none; /* Hide slides by default */
-}
-
-.slide.active {
-  display: block; /* Only the active slide is shown */
-}
-
-.slide img {
   width: 100%;
-  height: auto;
+    /* ... other styles ... */
 }
 
-.slide-caption {
-  text-align: center; /* Aligns the caption to the center */
-}
-
-button {
+.slide-left,
+.slide-right {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 10px;
-  cursor: pointer;
+  z-index: 20; /* Adjust if needed to ensure buttons are above the images */
+  /* Add button styling here */
 }
 
-#previous { left: 10px; }
-#next { right: 10px; }
+.slide-left {
+  left: 10px; /* Adjust as needed */
+}
 
+.slide-right {
+  right: 10px; /* Adjust as needed */
+}
 
-  }
