@@ -1,14 +1,11 @@
 # Meda-Portfolio
 
 ## Overview
-This repository, "Meda-Portfolio," is dedicated to hosting the personal website of my work. It is a work in progress (WIP) and includes various web development assets and code files necessary to build and deploy the website.
+This repository, "Meda-Portfolio," is dedicated to hosting the personal website of my work. It is a deployed website that can be found in my github portfolio links, It also features a Professional Development blog where you can keep up with some of the things I have been up to lately.
 
 ## Features
 - **Web Development Assets**: Includes HTML, CSS, and JavaScript files to structure, style, and add interactivity to the website.
 - **Personalization**: Showcases personal projects, achievements, and information, serving as an online portfolio.
-
-## Getting Started
-To view or contribute to the website's development, you can clone this repository.
 
 ## Contribution
 Feedback and contributions are highly welcomed to enhance the website's functionality and design.
