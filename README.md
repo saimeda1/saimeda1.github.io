@@ -11,7 +11,7 @@ This repository, "Meda-Portfolio," is dedicated to hosting the personal website 
 Feedback and contributions are highly welcomed to enhance the website's functionality and design.
 
 ## Deployment
-I am using digital ocean through github's student developer resources and bought a domain (www.saivmeda.com) off of porkbun to make this site live and accessible to everyone
+I am using github pages through the student developer resources and bought a domain (www.saivmeda.com) off of porkbun to make this site live and accessible to everyone with my custom domain. 
 
 ## License
 The content in this project is subject to Copyright.
