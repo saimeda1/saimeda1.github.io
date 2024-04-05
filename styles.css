@@ -791,7 +791,7 @@ button:hover {
 }
 
 .portfolio-thumb {
-  min-width: 100%; /* Full width of each slide */
+  min-width: 75%; /* Full width of each slide */
   transition: transform 0.5s ease; /* Smooth transition */
 }
 
@@ -799,7 +799,6 @@ button:hover {
   position: relative;
   overflow: hidden;
   width: 100%;
-    /* ... other styles ... */
 }
 
 .slide-left,
